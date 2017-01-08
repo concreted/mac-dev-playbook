@@ -5,9 +5,9 @@ configure_sudoers: yes
 configure_prefs: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/concreted/just-dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/tmp/dotfiles
 dotfiles_files:
   - .bash_profile
   - .gitconfig
@@ -22,6 +22,7 @@ homebrew_installed_packages:
   - bash-completion
   - chromedriver
   - doxygen
+  - fish
   - gettext
   - git
   - go
@@ -67,8 +68,8 @@ homebrew_cask_apps:
   - fing
   - firefox
   - google-chrome
-  - handbrake
-  - hipchat
+  # - handbrake
+  # - hipchat
   - java
   - kdiff3
   - licecap
@@ -78,14 +79,14 @@ homebrew_cask_apps:
   # - yujitach-menumeters # Forked version for 10.11+ support.
   - nvalt
   - sequel-pro
-  - skype
-  - skitch
+  # - skype
+  # - skitch
   - slack
   - sublime-text
   - transmit
   - vagrant
   - virtualbox
-  - vlc
+  # - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids: []
