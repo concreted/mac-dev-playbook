@@ -7,8 +7,9 @@ configure_osx: yes
 
 dotfiles_repo: https://github.com/concreted/just-dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/tmp/dotfiles
+dotfiles_repo_local_destination: ~/static_src/dotfiles
 dotfiles_files:
+  - .aliases
   - .bash_profile
   - .gitconfig
   - .gitignore
@@ -53,40 +54,40 @@ homebrew_installed_packages:
   - wget
   - wrk
 
-homebrew_taps:
-  - homebrew/core
-  - caskroom/cask
-  - homebrew/binary
-  - homebrew/dupes
-  - homebrew/php
-  - homebrew/versions
-
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - docker
-  - dropbox
-  - fing
-  - firefox
-  - google-chrome
-  # - handbrake
-  # - hipchat
-  - java
-  - kdiff3
-  - licecap
-  - limechat
-  - macvim
-  # - menumeters
-  # - yujitach-menumeters # Forked version for 10.11+ support.
-  - nvalt
-  - sequel-pro
-  # - skype
-  # - skitch
-  - slack
-  - sublime-text
-  - transmit
-  - vagrant
-  - virtualbox
-  # - vlc
+# homebrew_taps:
+#   - homebrew/core
+#   - caskroom/cask
+#   - homebrew/binary
+#   - homebrew/dupes
+#   - homebrew/php
+#   - homebrew/versions
+#
+# homebrew_cask_appdir: /Applications
+# homebrew_cask_apps:
+#   - docker
+#   - dropbox
+#   - fing
+#   - firefox
+#   - google-chrome
+#   # - handbrake
+#   # - hipchat
+#   - java
+#   - kdiff3
+#   - licecap
+#   - limechat
+#   - macvim
+#   # - menumeters
+#   # - yujitach-menumeters # Forked version for 10.11+ support.
+#   - nvalt
+#   - sequel-pro
+#   # - skype
+#   # - skitch
+#   - slack
+#   - sublime-text
+#   - transmit
+#   - vagrant
+#   - virtualbox
+#   # - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids: []

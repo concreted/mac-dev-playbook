@@ -11,7 +11,7 @@
         - ../config.yml
 
   roles:
-    - geerlingguy.homebrew
+    # - geerlingguy.homebrew
     - geerlingguy.dotfiles
     - name: geerlingguy.mas
       when: mas_installed_app_ids
