@@ -10,12 +10,13 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/static_src/dotfiles
 dotfiles_files:
   - .aliases
-  - .bash_profile
+  # - .bash_profile
   - .gitconfig
   - .gitignore
-  - .inputrc
+  # - .inputrc
   - .osx
-  - .vimrc
+  # - .vimrc
+  - .config/fish/config.fish
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
